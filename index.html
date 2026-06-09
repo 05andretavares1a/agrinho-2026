@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Equilíbrio entre produção e meio ambiente</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Bem-vindo!</h2>
+            <p>Descubra como práticas sustentáveis ajudam a aumentar a produção e proteger a natureza.</p>
+        </section>
+
+        <section id="interativo">
+            <h2>Compare fazendas</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="tradicional.jpg" alt="Fazenda tradicional">
+                    <h3>Fazenda Tradicional</h3>
+                    <button onclick="mostrarImpacto('tradicional')">Ver impactos</button>
+                </div>
+                <div class="card">
+                    <img src="sustentavel.jpg" alt="Fazenda sustentável">
+                    <h3>Fazenda Sustentável</h3>
+                    <button onclick="mostrarImpacto('sustentavel')">Ver impactos</button>
+                </div>
+            </div>
+            <div id="resultado"></div>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz rápido</h2>
+            <p>Qual prática ajuda a conservar o solo?</p>
+            <button onclick="responder('certo')">Plantio direto</button>
+            <button onclick="responder('errado')">Desmatamento</button>
+            <div id="feedback"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Concurso Agrinho 2026 - 2º ano Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
